@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "betterredstone",
+  "version": "${version}",
+
+  "name": "Better Redstone",
+  "description": "Better Redstone adds a variety of new redstone components to make the unending bounds of your creativity match what's possible in Minecraft.",
+  "authors": [
+    "Phsiic"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.phsiic.betterredstone.BetterRedstone"
+    ]
+  },
+  "mixins": [
+    "betterredstone.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.13.3",
+    "fabric": "*",
+    "minecraft": "1.18.x",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
